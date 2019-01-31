@@ -3,18 +3,16 @@
 
 Project Summary: Over the next few months, we want to build an NLP based classifer that will be used to categorize Clinical Trial Descriptions (from clinicaltrials.ucsf.edu/browse) according to the condition/body system they describe.
 
-Our theory is that the text descriptions of similar trials will be similar and we are attempting to test that theory in order to categorize trials that are currently in the "other" bucket. 
+Our theory is that the text descriptions of similar trials will be similar and we are attempting to test that theory in order to categorize trials that are currently in the "other" bucket. We've decided as a group that, since each trial can have multiple conditions (or sub-categories) and multiple clusters (or main categories) we will structure our analytic dataset to try to predict the cluster (main category) given a condition (sub-category) trial pair. It is an evolving discussion what techniques we plan to use to make this preditive model but we are considering: a standard boolean IR model, Latent Dirichlet Allocation (potentially a supervised version of this), multinomial naive bayes classifier, or perhaps kNN or kMeans clustering. Stay tuned for more information.
 
 ## IMPORTANT: Please read this note regarding the data set we will use!
 
-The creator of clinicaltrials.ucsf.edu has asked that we use the *actual production JSON file*, as opposed to the scraped version that I have uploaded to this repo.  OK by me!  
+The creator of clinicaltrials.ucsf.edu has asked that we use the *actual production JSON file*.
 
-### The data file you should use is called "NEW_clinical_trial_data.json.gz"
 This file is compressed using GZIP and will expand to a (largish ~150MB) JSON file that you can look through using Firefox/Chrome or your favorite JSON browser.  For more details on working with JSON files, see the UCSF Library's JSON Tutorial <https://github.com/ucsf-ckm/python-json-workshop>.
 
-Please download this file to complete the *UPDATED* homework assignment.  Unfortunately, because the formatting has changed appreciably, it means that the homework assignment needed to change to reflect the new input data.
+Please download this file to complete the homework assignments.
 
-If you've already begun the homework - fear not, it's still great practice, and we will provide you with homework solutions so you can stay up to date without having to redo the work (although you certainly could do the work if you wanted to!)
-
+We will update this repo with homework assignments and solutions approximately once per month.  Occassionally, we will also add additional iPython notebooks that help address specific techniques or concepts.
 
 
